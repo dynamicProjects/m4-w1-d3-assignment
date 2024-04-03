@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);
+
+//Colors:
+/*---------
+rgb(255,255,255)
+rgb(0,0,0)
+rgba(0,0,0,0.5)
+rgba(0,0,0,0.24)
+rgb(22, 34, 42)
+rgb(58, 96, 115)
+
+
+//Fonts:
+Bitter
+FontAwesome
+
+----------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bitter";
+}
+
+$max-width: 80em;
+
+/* Example styles for the "Add to Cart" button */
+.add-to-cart-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+
+  &:hover {
+      background-color: #45a049;
+  }
+}
+
+.product {
+  width: 23%;
+  display: inline-block;
+  padding: 10px;
+
+  img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+  }
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.header {
+  h1 {
+      background-image: linear-gradient(#29465B, grey);
+      color: white;
+      text-align: center;
+      padding: 40px;
+  }
+
+  h2 {
+      text-align: center;
+  }
+}
